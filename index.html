@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>계산기</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  
+  
+  <div class="calculator">
+      <form name = "forms">
+        <input type="text" name = "value" readonly/> 
+        <input type="button" class = "reset" value = "C" onclick="document.forms.value.value += ''"/>
+        <input type="button" class = "operator" value = "/" onclick="document.forms.value.value += '/'"/> 
+        
+        <input type="button" name = "one" value = "1" onclick="document.forms.value.value += '1'">
+        <input type="button" name = "two" value = "2" onclick="document.forms.value.value += '2'"/>
+        <input type="button" name = "three" value = "3" onclick="document.forms.value.value += '3'"/>
+        <input type="button" class = "operator" value = "*" onclick="document.forms.value.value += '*'"/> 
+
+        <input type="button" name = "four" value = "4" onclick="document.forms.value.value += '4'"/>
+        <input type="button" name = "five" value = "5" onclick="document.forms.value.value += '5'"/>
+        <input type="button" name = "six" value = "6" onclick="document.forms.value.value += '6'"/>
+        <input type="button" class = "operator" value = "+" onclick="document.forms.value.value += '+'"/> 
+        <input type="button" name = "seven" value = "7" onclick="document.forms.value.value += '7'"/>
+        <input type="button" name = "eight" value = "8" onclick="document.forms.value.value += '8'"/>
+        <input type="button" name = "nine" value = "9" onclick="document.forms.value.value += '9'"/>
+        <input type="button" class = "operator" value = "-" onclick="document.forms.value.value += '-'"/>  
+        <input type="button" class = "dat" value = "." onclick="document.forms.value.value += '.'"/>
+        <input type="button" name = "zero" value = "0" onclick="document.forms.value.value += '0'"/>
+        <input type="button" class = "operator result" value = "=" onclick="document.forms.value.value=eval(document.forms.value.value)">
+        
+      </form>
+</div>
+</body>
+</html>
